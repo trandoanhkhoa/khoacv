@@ -1,0 +1,575 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.hide{
+    display: none;
+}
+.show_flex{
+    display: flex;
+}
+.show_block{
+    display: block
+}
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+html{
+    font-family: "Baloo Paaji 2";
+}
+#main{
+    
+}
+
+#home{
+    background-image: url('./img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* background: rgba(, 0, 0, 0.0); */
+    position: relative;
+    background-position: center center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+.home__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+.home__header{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    z-index: 10;
+    /* background-color: #ccc; */
+    
+}
+
+.home__logo{
+
+}
+.home__logo-title{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 1200;
+}
+.home__nav{
+    display: flex;
+}
+.home__nav-items{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+.home__nav-item{
+    margin: 0px 10px;
+}
+.home__nav-item:hover .home__nav-link{
+    color: #695aa6;
+}
+.home__nav-link{
+    text-decoration: none;
+    /* line-height: 65px; */
+    color: #fff;
+    font-weight: 800;
+}
+.home__nav-item.home__nav-active{
+    padding: 6px 12px;
+    background-color: #695aa6;
+    color: #fff;
+    border-radius: 2px;
+}
+.home__nav-item.home__nav-active:hover > .home__nav-link{
+    color: #fff;
+}
+.home__nav-bars{
+    color: #fff;
+    font-size: 40px;
+}
+.home__nav-subars{
+    display: block;
+}
+.home__nav-bars:hover{
+    cursor: pointer;
+}
+.home__header-content{
+    /* margin: 20px auto 0px auto; */
+    
+    margin: 0px auto;
+    max-width: 550px;
+    /* max-height: 550px; */
+    z-index: 1;
+
+}
+.home__header-up,.home__header-down{
+    display: block;
+}
+.home__header-up{
+    font-size:  calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: bold;
+    height: 60px; 
+    color: #5c5c62;
+}
+.home__header-down{
+    font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: bold;
+    height: 100px;
+    color: #44484f;
+}
+.home__header-desc{
+    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+    opacity: 0.8;
+    font-weight: 100;
+}
+.home__header__btn-work{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: #695aa6;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: "Baloo Paaji 2";
+}
+#about{
+    padding: 0px 10px 70px 10px;
+}
+.about__me {
+    margin: 0px 50px;
+}
+.about__me-img{
+    /* max-width: 100%;
+    min-width: 100%; */
+    width: 100%;
+    margin-bottom: 15px;
+}
+.about__img-main{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.about__me-details{
+    text-align: justify;
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 100;
+    opacity: 1;
+    color: #111;
+    letter-spacing: .6px;
+    font-family: "Open Sans";
+}
+.about__me-details.p2{
+    margin-bottom: 16px;
+}
+.about__me-question{
+    margin-bottom: 6px;
+    font-weight: 400;
+    opacity: .6;
+}
+.about__me-caption{
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    color: #695aa6;
+}
+.about__me-cv{
+    margin-top: 25px;
+    color: #695aa6;
+    border:1px solid #695aa6;
+    outline: none;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    width: 125px;
+}
+.about__me-cv:hover{
+    background-color: #695aa6;
+    color: #fff;
+    border:1px solid #fff;
+    cursor: pointer;
+}
+#service{
+    padding: 70px 10px;
+    background:linear-gradient(180deg,#fff,#ededf4,#fff) ;
+}
+.service__main-caption{
+    width: 250px;
+    margin: 0px auto;
+
+    text-align: center;
+    
+}
+.service__main-question{
+    margin-bottom: 6px;
+    font-weight: 400;
+    opacity: .6;
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: .6px;
+}
+.service__main-sve{
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    color: #695aa6;
+    font-weight: 800;
+
+    
+    margin-bottom: 40px;
+}
+.service__main-content{
+    margin: 0px 100px;
+}
+.service__main-role{
+    /* position: relative; */
+}
+.service__container-role{
+    /* position: absolute; */
+    border: 1px solid #dee2e6;
+    text-align: center;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 3px;
+    animation: all 1s;
+}
+.service__icon-role{
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #444444;
+}
+.service__main-name{
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 700;
+    /* font-family: 'Open Sans'; */
+    color: #695aa6;
+}
+#contact{
+    padding: 70px 10px;
+    margin: 0px auto;
+    max-width: 960px;
+}
+
+.contact__main-content.question{
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 100;
+    opacity: 0.6;
+    color: #111;
+    letter-spacing: .6px;
+    margin-bottom: 8px;
+}
+
+.contact__main-content.ctc{
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    color: #695aa6;
+    font-weight: 800;
+    margin-bottom: 46px;
+}
+.contact__main-content{
+    text-align: center;
+}
+.contact__container-infor{
+    width: 100%;
+}
+.contact__mess-user,
+.contact__mess-area{
+    width: 100%;
+}
+.contact__txt{
+    width: 100%;
+    
+    
+    
+}
+.contact__txt,.contact__mess-area{
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family: "Baloo Paaji 2";
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.contact__txt:focus,.contact__mess-area:focus{
+    border: 1px solid #695aa6;
+}
+.contact__infor-user{
+    margin-bottom: 16px;
+}
+.contact__btn-send{
+    margin: 16px 0px;
+}
+.contact__btn{
+    margin: 0px auto;
+    display: block;
+    color: #695aa6;
+    border:1px solid #695aa6;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.contact__btn:hover{
+    color: #fff;
+    background-color: #695aa6;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.footer__copyright,.footer__contact-items{
+    margin: 15px 0px;
+}
+.footer__copyright{
+    color: #393e46;
+    font-weight: "Open Sans";
+}
+.footer__contact-items{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+.footer__contact-item{
+    margin: 0px 10px;
+}
+.footer__contact-link{
+    color: rgb(143, 143, 143);
+    font-size: 25px;
+}
+.footer{
+    border-top: 1px solid #ccc;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+}
+#porfolio{
+    padding: 70px 10px;
+    margin: 0px 100px;
+}
+.porfolio__img-main{
+    object-fit: contain;
+    width: 100%;
+}
+.porfolio__question,
+.porfolio__portf
+{
+    text-align: center;
+}
+.porfolio__question{
+    margin-bottom: 6px;
+    font-weight: 400;
+    opacity: .6;
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: .6px;
+}
+.porfolio__portf{
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    font-weight:800;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #695aa6;
+    margin-bottom: 64px;
+}
+#pricing{
+    padding: 70px 10px;
+    margin: 0px 120px;
+}
+.pricing__question,.pricing__price{
+    text-align: center;
+}
+.pricing__question{
+    margin-bottom: 6px;
+    font-weight: 400;
+    opacity: .6;
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: .6px;
+}
+.pricing__price{
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    font-weight:800;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #695aa6;
+    margin-bottom: 40px;
+}
+.pricing__item-icon{
+    
+    margin: 15px 0px;
+}
+.pricing__icon-main{
+    width: 70px;
+    margin:0px auto;
+    display: block;
+}
+.pricing__item{
+    text-align: center;
+    border: 1px solid #dee2e6;
+    /* margin: 0px -1px; */
+    padding: 30px 15px;
+    margin-top: 5px;
+}
+.pricing__type{
+    margin-bottom: 0px;
+    font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 800;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #695aa6;
+}
+.pricing__details{
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    opacity: 0.6;
+    color: #111;
+    letter-spacing: .6px;
+    margin-bottom: 8px;
+}
+.icon__none{
+    color: #ec185d;
+    font-weight: 100;
+    font-size: 24px;
+
+    
+}
+.pricing__price-month{
+    font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 600;
+    opacity: .8;
+}
+.pricing__subcribe{
+    outline: none;
+    color: #fff;
+    background-color: #695aa6;
+    /* border-color: #695aa6; */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 3px ;
+}
+#blog{
+    padding: 70px 10px;
+    margin: 0px 100px;
+}
+.blog__main{
+    border: 1px solid #dee2e6;
+    margin-top: 10px;
+}
+.blog__img{
+    min-width: 350px;
+    max-width: 350px;
+}
+.blog__img-main{
+    width: 100%;
+    height: 100%;
+    margin: 0px -12px;
+}
+.blog__items{
+    display: flex;
+    width: 50%;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.blog__text{
+    text-align: justify;
+}
+.blog__container{
+    padding: 30px 20px;
+}
+.blog__name{
+    margin-bottom: 8px;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #695aa6;
+}
+.blog__item-link{
+    text-decoration: none;
+    color: #444;
+}
+.icon__heart{
+    color: #ec185d;
+}
+.blog__more{
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+}
+.icon__more{
+    position: relative;
+    top: 3px;
+}
+.blog__question,
+.blog__bg{
+    text-align: center;
+}
+.blog__question{
+    margin-bottom: 6px;
+    font-weight: 400;
+    opacity: .6;
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: .6px;
+}
+.blog__bg{
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    font-weight:800;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #695aa6;
+    margin-bottom: 40px;
+}
+#hire_me{
+    padding: 40px 150px;
+    background-color: #695aa6;
+}
+.hire_content{
+    text-align: left;
+    color: #fff;
+}
+.hire__text.question{
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 800;
+}
+.hire__btn{
+    /* width: 250px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hire__btn-main{
+    padding: 8px 16px;
+    font-size: 24px;
+    outline: none;
+    font-weight: 700;
+    font-family: "Baloo Paaji 2";
+    border: none;
+    border-radius: 4px;
+}
+.hire__container{
+    justify-content: space-between;
+}
+
+/* Event scroll header */
+.box__shadow{
+    box-shadow: 2px 0.5px 2px 1px rgba(0, 0, 0, 0.2)
+}
+.pricing__item:hover{
+    transform: translateY(-20px);
+    /* transform: scaleX(1.2); */
+}
+
+
+.service__container-role:hover {
+    /* position: relative; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* top: -20px; */
+    top: -20px;
+    
+}
